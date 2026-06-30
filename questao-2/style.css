@@ -99,8 +99,6 @@ th { background: #f8fafc; }
 .p-Alta { background: #ffedd5; color: #9a3412; }
 .p-Urgente { background: #fee2e2; color: #991b1b; }
 
-.s-Aberto { background: #dbeafe; color: #1e40af; }
-.s-Em.atendimento, .s-Em\.atendimento { background: #e0e7ff; color: #3730a3; }
 .status-cell select { font-size: .78rem; padding: 4px; }
 
 .prazo-estourado td { background: #fff1f2; }
