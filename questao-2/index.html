@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle de Chamados — Suporte TI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Abertura e Controle de Chamados</h1>
+    <p class="sub">Protótipo funcional — Suporte de TI</p>
+  </header>
+
+  <main>
+    <!-- Formulário de abertura -->
+    <section class="card">
+      <h2>Abrir chamado</h2>
+      <form id="form-chamado">
+        <div class="grid">
+          <label>Solicitante *
+            <input type="text" name="solicitante" required placeholder="Nome de quem abriu" />
+          </label>
+          <label>Contato (e-mail / WhatsApp) *
+            <input type="text" name="contato" required placeholder="email@... ou (00) 00000-0000" />
+          </label>
+          <label>Origem *
+            <select name="origem" required>
+              <option value="E-mail">E-mail</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Telefone">Telefone</option>
+              <option value="Presencial">Presencial</option>
+            </select>
+          </label>
+          <label>Tipo de demanda *
+            <select name="tipo" required>
+              <option value="Acesso/Login">Acesso/Login</option>
+              <option value="Erro no sistema">Erro no sistema</option>
+              <option value="Dúvida de uso">Dúvida de uso</option>
+              <option value="Solicitação/Cadastro">Solicitação/Cadastro</option>
+              <option value="Financeiro/Contrato">Financeiro/Contrato</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </label>
+          <label>Prioridade *
+            <select name="prioridade" required>
+              <option value="Baixa">Baixa</option>
+              <option value="Média" selected>Média</option>
+              <option value="Alta">Alta</option>
+              <option value="Urgente">Urgente (com prazo)</option>
+            </select>
+          </label>
+          <label>Encaminhar para *
+            <select name="setor" required>
+              <option value="Suporte">Suporte (resolve no atendimento)</option>
+              <option value="Desenvolvimento">Desenvolvimento</option>
+              <option value="Atendimento">Atendimento</option>
+              <option value="Implantação">Implantação</option>
+              <option value="Administrativo">Administrativo</option>
+              <option value="Financeiro">Financeiro</option>
+            </select>
+          </label>
+        </div>
+        <label>Descrição do problema *
+          <textarea name="descricao" required rows="3" placeholder="O que acontece, mensagem de erro, desde quando..."></textarea>
+        </label>
+        <button type="submit">Abrir chamado</button>
+      </form>
+    </section>
+
+    <!-- Filtros e indicadores -->
+    <section class="card">
+      <div class="filtros">
+        <label>Filtrar status
+          <select id="filtro-status">
+            <option value="">Todos</option>
+            <option value="Aberto">Aberto</option>
+            <option value="Em atendimento">Em atendimento</option>
+            <option value="Aguardando solicitante">Aguardando solicitante</option>
+            <option value="Encaminhado">Encaminhado</option>
+            <option value="Resolvido">Resolvido</option>
+            <option value="Encerrado">Encerrado</option>
+          </select>
+        </label>
+        <div id="indicadores" class="indicadores"></div>
+      </div>
+
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Solicitante</th>
+            <th>Tipo</th>
+            <th>Prioridade</th>
+            <th>Setor</th>
+            <th>Status</th>
+            <th>1º retorno</th>
+            <th>Devolutiva final</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
