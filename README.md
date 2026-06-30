@@ -96,6 +96,8 @@ Descrição | Prioridade | Status | 1º retorno | Encaminhado para | Devolutiva 
 
 **Formato escolhido:** tela funcional em **HTML, CSS e JavaScript** → pasta [`questao-2/`](questao-2).
 
+![Tela de abertura e controle de chamados](docs/tela-chamados.png)
+
 ### Como rodar
 Abra o arquivo [`questao-2/index.html`](questao-2/index.html) no navegador
 (duplo clique). Não precisa de servidor nem instalação. Os chamados ficam salvos
