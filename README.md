@@ -4,7 +4,8 @@ Entrega no **formato Opção B** (totalmente via GitHub). Este README contém as
 respostas teóricas; os arquivos de código estão nas pastas
 [`questao-2/`](questao-2) e [`questao-3/`](questao-3).
 
-**Candidata(o):** Paollo Sanchez
+**Candidato:** Paollo Sanchez Pinheiro
+**WhatsApp:** (31) 99641-4518
 **Questões respondidas:** 1 e 2 (obrigatórias) + **3** (opcional escolhida).
 
 ---
