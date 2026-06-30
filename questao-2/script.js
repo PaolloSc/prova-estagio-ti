@@ -8,9 +8,11 @@ const form = document.getElementById("form-chamado");
 const lista = document.getElementById("lista");
 const filtroStatus = document.getElementById("filtro-status");
 const indicadores = document.getElementById("indicadores");
+const avisoEl = document.getElementById("aviso");
 
 let chamados = carregar();
 let seq = chamados.reduce((max, c) => Math.max(max, c.id), 0);
+let aviso = ""; // mensagem de bloqueio exibida no topo da lista
 
 function carregar() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
@@ -46,10 +48,11 @@ function mudarStatus(id, novo) {
   const c = chamados.find((x) => x.id === id);
   if (!c) return;
   if (novo === "Encerrado" && !c.devolutivaFinal) {
-    alert("Não é possível encerrar: marque a 'devolutiva final' ao solicitante antes.");
-    render(); // desfaz a seleção visual
+    aviso = `Não é possível encerrar o chamado #${id}: marque a "devolutiva final" ao solicitante antes.`;
+    render(); // mantém o status atual e mostra o aviso
     return;
   }
+  aviso = "";
   c.status = novo;
   salvar();
   render();
@@ -59,11 +62,15 @@ function toggle(id, campo) {
   const c = chamados.find((x) => x.id === id);
   if (!c) return;
   c[campo] = !c[campo];
+  if (campo === "devolutivaFinal" && c[campo]) aviso = ""; // resolveu a pendência
   salvar();
   render();
 }
 
 function render() {
+  avisoEl.textContent = aviso;
+  avisoEl.hidden = !aviso;
+
   const filtro = filtroStatus.value;
   const visiveis = chamados.filter((c) => !filtro || c.status === filtro);
 

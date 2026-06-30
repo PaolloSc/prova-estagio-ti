@@ -95,8 +95,15 @@ Descrição | Prioridade | Status | 1º retorno | Encaminhado para | Devolutiva 
 ## Questão 2 — Solução de abertura e controle de chamados
 
 **Formato escolhido:** tela funcional em **HTML, CSS e JavaScript** → pasta [`questao-2/`](questao-2).
+A identidade visual (cores e marca) segue o tema da [Rocha Cerqueira](https://rochacerqueira.com.br/).
 
 ![Tela de abertura e controle de chamados](docs/tela-chamados.png)
+
+**Regra principal — não encerrar sem devolutiva ao solicitante.** Ao tentar mudar o
+status para *Encerrado* sem marcar a "devolutiva final", o sistema bloqueia e avisa;
+só após marcá-la o encerramento é permitido:
+
+![Bloqueio ao encerrar sem devolutiva final](docs/bloqueio-encerramento.gif)
 
 ### Como rodar
 Abra o arquivo [`questao-2/index.html`](questao-2/index.html) no navegador
