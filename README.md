@@ -1,20 +1,33 @@
-# Prova — Processo Seletivo: Estágio em TI
+<div align="center">
 
-Entrega no **formato Opção B** (totalmente via GitHub). Este README contém as
-respostas teóricas; os arquivos de código estão nas pastas
-[`questao-2/`](questao-2) e [`questao-3/`](questao-3).
+# 🧩 Prova — Processo Seletivo: Estágio em TI
 
-**Candidato:** Paollo Sanchez Pinheiro
-**WhatsApp:** (31) 99641-4518
-**Questões respondidas:** 1 e 2 (obrigatórias) + **3** (opcional escolhida).
+**Atendimento de suporte · Sistema de chamados · Integração com API**
 
----
+Entrega no **formato Opção B** (totalmente via GitHub) — respostas teóricas neste README e código nas pastas do repositório.
 
-## Índice
-- [Questão 1 — Atendimento de suporte e triagem](#questão-1--atendimento-de-suporte-e-triagem)
-- [Questão 2 — Solução de abertura e controle de chamados](#questão-2--solução-de-abertura-e-controle-de-chamados)
-- [Questão 3 — Lógica de programação e integração (API)](#questão-3--lógica-de-programação-e-integração-api)
-- [Declaração de uso de IA](#declaração-de-uso-de-ia)
+<br>
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+![Questões](https://img.shields.io/badge/Questões-1%20·%202%20·%203-4F931D?style=flat-square)
+![Vaga](https://img.shields.io/badge/Vaga-Estágio%20em%20TI-04303B?style=flat-square)
+![Tema](https://img.shields.io/badge/Tema-Rocha%20Cerqueira-7CBB4D?style=flat-square)
+![Dependências](https://img.shields.io/badge/Dependências-zero-success?style=flat-square)
+
+<br>
+
+📋 [Questão 1](#questão-1--atendimento-de-suporte-e-triagem) ·
+🛠️ [Questão 2](#questão-2--solução-de-abertura-e-controle-de-chamados) ·
+🔌 [Questão 3](#questão-3--lógica-de-programação-e-integração-api) ·
+🤖 [Uso de IA](#declaração-de-uso-de-ia)
+
+**Candidato:** Paollo Sanchez Pinheiro &nbsp;·&nbsp; **WhatsApp:** (31) 99641-4518
+
+</div>
 
 ---
 
