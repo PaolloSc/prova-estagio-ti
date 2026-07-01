@@ -110,6 +110,8 @@ Descrição | Prioridade | Status | 1º retorno | Encaminhado para | Devolutiva 
 **Formato escolhido:** tela funcional em **HTML, CSS e JavaScript** → pasta [`questao-2/`](questao-2).
 A identidade visual (cores e marca) segue o tema da [Rocha Cerqueira](https://rochacerqueira.com.br/).
 
+🔗 **Teste ao vivo (sem baixar nada):** https://paollosc.github.io/prova-estagio-ti/questao-2/
+
 ![Tela de abertura e controle de chamados](docs/tela-chamados.png)
 
 **Regra principal — não encerrar sem devolutiva ao solicitante.** Ao tentar mudar o
@@ -119,9 +121,9 @@ só após marcá-la o encerramento é permitido:
 ![Bloqueio ao encerrar sem devolutiva final](docs/bloqueio-encerramento.gif)
 
 ### Como rodar
-Abra o arquivo [`questao-2/index.html`](questao-2/index.html) no navegador
-(duplo clique). Não precisa de servidor nem instalação. Os chamados ficam salvos
-no `localStorage` do navegador.
+Acesse o link ao vivo acima, ou abra o arquivo [`questao-2/index.html`](questao-2/index.html)
+localmente no navegador (duplo clique). Não precisa de servidor nem instalação.
+Os chamados ficam salvos no `localStorage` do navegador.
 
 ### Campos do formulário
 Solicitante, Contato (e-mail/WhatsApp), Origem (E-mail/WhatsApp/Telefone/Presencial),
